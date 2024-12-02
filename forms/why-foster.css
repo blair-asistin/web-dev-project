@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family:'Mona Sans';
+}
+
+body {
+    background-image: url("https://images.squarespace-cdn.com/content/5c6494bbf4e5310e57b3de34/1555017042311-D4CWIZ8JD5I2ZC8DN0DH/IMG_3362.JPG?content-type=image%2Fjpeg");
+    background-position: top left;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    
+}
+
+/* div#bg-image {
+    filter: blur(8px);
+} */
+
+a:not(.button) {
+    text-decoration-line: none;
+    border-bottom: 1pt solid #2060dd;
+    color: #2060dd;
+}
+
+a:hover:not(.button) {
+    border-color:#77a4ff;
+    color:#77a4ff;
+}
+
+a.button {
+    text-decoration-line: none;
+    border:none;
+    padding:12px 24px;
+    color:#ffffff;
+    background-color: #742071;
+    border-radius:20px;
+}
+
+a.button:hover {
+    background-color: #982a94;
+}
+
+span.header {
+    font-size: 24pt;
+    font-weight:bold;
+    color: #742071;
+    border-bottom: #742071 solid 2pt;
+}
+
+p {
+    font-size:12pt;
+}
+
+div.warning {
+    font-size:16pt;
+    position:sticky;
+    top:0;
+    background-color: #dd9090;
+    padding:10pt;
+    border-left:10pt solid #bb4040;
+    z-index: 32767;
+}
+
+div.warning > span.header {
+    font-size: 20pt;
+    color: #000000;
+    border: none;
+}
+
+div#content-wrapper {
+    padding:24px;
+    background-color: #ffffff;
+    width:90%;
+    margin:0 auto;
+    border: 4pt #742071 solid;
+}
+
+div#title {
+    background-color: #742071;
+    color:#ffffff;
+    width:100%;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:0;
+    padding-right:0;
+    font-size:20pt;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 20pt;
+}
+
+.logo{
+    width: 80pt;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav_list{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}

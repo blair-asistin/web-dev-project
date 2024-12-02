@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family:'Mona Sans';
+
+    box-sizing: border-box;
+}
+
+.blue-background {
+    background-color: #578294;
+}
+
+.purple-background {
+    background-color: #742071;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #363131;
+
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-image: url("https://images.squarespace-cdn.com/content/5c6494bbf4e5310e57b3de34/1555017042311-D4CWIZ8JD5I2ZC8DN0DH/IMG_3362.JPG?content-type=image%2Fjpeg");
+    background-position: top left;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    
+}
+
+
+
+a {
+    text-decoration-line: none;
+    /* border-bottom: 1pt solid #2060dd; */
+    color: #2060dd;
+    cursor: pointer;
+}
+
+a:hover {
+    border-color:#77a4ff;
+    color:#77a4ff;
+}
+
+span.header {
+    font-size: 24pt;
+    font-weight:bold;
+    color: #742071;
+    border-bottom: #742071 solid 2pt;
+}
+
+p {
+    font-size:1.15rem;
+    font-weight: 400;
+}
+
+.warning-ex-btn {
+    position: absolute;
+    z-index: 5000;
+    right: 1px;
+
+    
+}
+
+.warning-ex-btn button {
+    background-color: rgb(226, 57, 57);
+    color: white;
+    border: solid rgb(226, 57, 57);
+}
+
+div.warning {
+    font-size:16pt;
+    position:sticky;
+    top:0;
+    background-color: #dd9090;
+    padding:10pt;
+    border-left:10pt solid #bb4040;
+    z-index: 3276;
+}
+
+div.warning > span.header {
+    font-size: 20pt;
+    color: #000000;
+    border: none;
+}
+
+div#content-wrapper {
+    padding:24px;
+    background-color: #ffffff;
+    width:90%;
+    margin:0 auto;
+    border: 4pt #742071 solid;
+}
+
+div#title {
+    background-color: #742071;
+    color:#ffffff;
+    width:100%;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:0;
+    padding-right:0;
+    font-size:20pt;
+    font-weight: bold;
+}
+
+.nav-container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 20pt;
+}
+
+.logo{
+    width: 80pt;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav_list{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none !important;
+    color: #781181 !important;
+    background-color: white !important;
+    border: #fff !important;
+}
+
+.nav-link:hover {
+    color: #a43fad !important;
+}
+
+.dropdown-menu {
+    float:right;
+}
+
+
+.layout-container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+
+/* DONATE PAGE */
+
+/* Donate section */
+
+.donate-section {
+    padding-top: 100px;
+}
+
+.venmo-logo {
+    width: 150px;
+}
+
+.amazon-logo {
+    width: 120px;
+}
+
+.amazon-artist-name {
+    position: absolute;
+    right: 1000px;
+    bottom: -1px;
+}
+
+.donate-desc {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    
+}
+
+.left-side {
+    width: 40%;
+    background-color: #65c6f0;
+    padding: 1em;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.left-side h3 {
+    color: white;
+}
+
+.donate-2-artist-name {
+    position: absolute;
+    right: 250px;
+    bottom: -620px;
+}
+
+
+.right-side {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-border {
+    border-radius: 10%;
+}
+
+.donate-options {
+   
+    
+    flex-direction: column;
+    
+    padding: 0;
+    border-radius: 10px;
+    gap: 20px;
+    width: 70%;
+    background-color: #fff;
+    
+}
+
+.layout-desc p {
+    margin: 2em 0;
+}
+
+.donate-logo {
+    text-decoration: none !important;
+}
+
+.pay-logos {
+    align-items: center;
+    gap: 60px;
+}
+
+.paypal-instruction-img {
+    padding-left: 300px;
+    padding-top: 30px
+}
+
+.how-to-section h3 {
+    background-color: #5589fc;
+    color: white;
+    width: 20%;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.mail-info {
+    margin-top: 7em;
+    border-top: 1px solid #363131;
+    border-bottom: 1px solid #363131;
+    
+}
+
+.mail-info h2{
+    text-align: center;
+}
+
+
+
+/* Amazon section */
+.amazon-section {
+    padding-top: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.donate-img {
+    width: 50%;
+}
+
+.supply-list {
+    list-style: circle;
+    padding-top: 1.5em;
+}
+
+.supply-list li {
+    margin-top: 0.5em;
+}
+
+.in-need__header {
+    width: 90%;
+    /* background-color: #78507e; */
+    
+    padding: 1em 2em;
+    margin-top: 2em;
+    border-radius: 30px;
+}
+
+.in-need__header h1 {
+    color: white;
+}
+
+.amazon-details {
+    margin-top: 3em;
+}
+
+
+/* EDUCATIONAL PAGE */
+
+.edu-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.edu-col img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    max-width: 447.250px;
+    min-height: 295px;
+}
+
+.edu-col p {
+    padding: 1em;
+    margin: 0;
+}
+
+.edu-col {
+    color: #fff;
+    /* background-color: #ad57ab; */
+    /* background-color: #643e92; */
+    background-color: #742071;
+    width: 30%;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    
+}
+
+/* Modal */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #9c3899 !important;
+    /* background-color: #825fac !important; */
+    margin: 0 1em 1em 1em;
+    
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.modal-content {
+    color: black !important;
+}
+
+
+/* HOME PAGE */
+
+.intro-header {
+    width: 43%;
+    position: absolute;
+    z-index: 1;
+    margin: 200px 100px;
+}
+
+.adopt-btn {
+    background-color: #b84cb4;
+    color: white !important;
+    padding: 1em 1.3em;
+    border-radius: 24px;
+    font-size: 1.25rem;
+    margin-top: 1em;
+}
+
+.adopt-btn:hover {
+    background-color: #c260bf;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.adopt-btn:focus{
+    border: 0;
+    outline: 0 !important;
+
+}
+
+.adopt-btn:active {
+    
+    opacity: 0.8;
+
+}
+
+.intro-title {
+    font-size: 75px;
+    color: #fff;
+}
+
+
+/* change transition duration to control the speed of fade effect */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+}
+   
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+   
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+    opacity: 0;
+}
+   
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+.carousel > .carousel-inner > .carousel-item > img{
+    width:100%; /* Yeap you can change the width and height*/
+    height:750px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(70%);
+}
+
+.fb-artist-name {
+    position: relative;
+    bottom: 130px;
+    left: 550px;
+    z-index: 1;
+}
+
+.fb-section {
+    padding-top: 80px;
+    align-items: center;
+}
+
+
+
+.fb-desc-container {
+    background-color: #4b52d1;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fb-info {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.fb-link {
+    color: white;
+}
+
+.fb-link:hover {
+    color: white;
+}
+
+.fb-info:focus {
+    color: white;
+}
+
+.fb-desc p {
+    padding-top: 1em;
+}
+
+.volunteer-img {
+    width: 50%;
+    max-width: 700px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+
+.volunteer-section {
+    justify-content: center;
+    background-color: #bbd488;
+    border-radius: 24px;
+}
+
+.volunteer-artist-name {
+    position: absolute;
+    right: 220px;
+    bottom: -1730px;
+    z-index: 1;
+    
+}
+
+.volunteer-btn {
+    background-color: #9bbd56;
+    color: #3c4228;
+    font-size: 1.20rem;
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+}
+
+.volunteer-btn:hover {
+    background-color: #b3ca85;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3c4228;
+}
+
+.volunteer-desc-container {
+    justify-content: space-between;
+    padding: 3em;
+    border-radius: 20px;
+    color: #3c4228;
+
+}
+
+.volunteer-desc-container h1{
+    padding-bottom: 0.3em;
+}
+
+.volunteer-desc-container p{
+    font-size: 1.30rem;
+    margin-bottom: 1.5em;
+}
+
+.homedonate-section {
+    padding-top: 4em;
+    justify-content: center;
+    gap: 60px;
+}
+
+.homedonate-desc  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+}
+
+.homedonate-desc-container {
+    
+    width: 90%;
+    background-color: #fc86a9;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.donate-artist-name {
+    position: absolute;
+    right: 1000px;
+    top: 3235px;
+    z-index: 1;
+}
+
+.homedonate-desc-container h1{
+    color: white;
+}
+
+.donate-btn {
+    background-color: #f85d8c;
+    color: white;
+    font-size: 1.20rem;
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+}
+
+.donate-btn:hover {
+    background-color: #fa497e;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.donate-btn:focus{
+    border: 0;
+    outline: 0 !important;
+
+}
+
+.donate-btn:active {
+    
+    opacity: 0.5;
+
+}
+
+
+.homedonate-img {
+    width: 50%;
+    
+}
+
+
+/* News section */
+
+.news-section {
+    /* background-color: #742071; */
+    background-color: #943491;
+    color: #8b3e89;
+    padding: 3em;
+    margin-top: 4em;
+    border-radius: 24px;
+}
+
+.news-section h1 {
+    margin-bottom: 1em;
+    color: white;
+}
+
+.news-section p {
+    font-weight: 700;
+    padding: 1em;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #8b3e89;
+}
+
+.news-link:hover {
+    color: #8b3e89;;
+}
+
+.swiper {
+    width: 100%;
+    
+}
+
+.swiper-wrapper {
+    
+}
+
+.swiper-slide {
+    background-color: #fff;
+    border-radius: 2em;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 532.328px;
+    max-height: 400px;
+    height: 276.375px;
+    object-fit: cover;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #8b3e89 !important;
+}
+
+/* GALLERY PAGE */
+
+    /* General gallery styling */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .gallery-item {
+        width: 23%; /* Each image takes ~25% of the row, minus spacing for gap */
+        position: relative;
+        transition: transform 0.5s ease, z-index 0.5s ease;
+        z-index: 1; /* Default stacking order */
+        height: 70%;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease, transform-origin 0.5s ease;
+        
+    }
+
+    /* Hover effects */
+    .gallery-item:hover {
+        z-index: 10; /* Bring hovered item to the front */
+    }
+    .gallery-item:nth-child(4n+1):hover img {
+        transform: scale(2);
+        transform-origin: top left;
+    }
+    .gallery-item:nth-child(4n+2):hover img {
+        transform: scale(2);
+        transform-origin: top center;
+    }
+    .gallery-item:nth-child(4n+3):hover img {
+        transform: scale(2);
+        transform-origin: top center;
+    }
+    .gallery-item:nth-child(4n):hover img {
+        transform: scale(2);
+        transform-origin: top right;
+    }
+
+    /* Ensuring smooth transition back */
+    .gallery-item:nth-child(4n+1) img {
+        transform-origin: top left;
+    }
+    .gallery-item:nth-child(4n+2) img {
+        transform-origin: top center;
+    }
+    .gallery-item:nth-child(4n+3) img {
+        transform-origin: top center;
+    }
+    .gallery-item:nth-child(4n) img {
+        transform-origin: top right;
+    }

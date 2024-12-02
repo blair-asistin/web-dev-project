@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>2024 Saving Orphan Souls Rescue Foster Application - Final Group Project</title>
+        
+        <link rel="stylesheet" href="forms.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/5c6494bbf4e5310e57b3de34/1550625376634-X42STSQ2O49LOH35JLXG/blob?format=1500w">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            function onSelectOption(element, desiredResult) {
+                var bq = document.getElementById(element.id + "_bq");
+                if (element.value == desiredResult) {
+                    bq.hidden = false;
+                }
+                else {
+                    bq.hidden = true;
+                }
+            }
+        </script>
+
+    <script src="../script.js" defer></script>
+    </head>
+    <body>
+        <!-- <div id="bg-image"></div> -->
+        <div class="warning-container">
+            <div class="warning-ex-btn"><button>x</button></div>
+            <div class="warning"><span class="header">WARNING</span><br> This website is not the real Saving Orphan Souls Rescue charity, and should not be mistaken for such. This is a project for our Web Development class to re-design an existing website; we are not affiliated with the charity. The real site is located at <a href="https://www.savingorphansouls.org">savingorphansouls.org </a>. </div>
+        </div>
+       
+        
+        <br>
+        <div id="content-wrapper">
+            <nav class="nav-container">
+                <a class="nav-link" href="../index.html">
+                    <img class="logo" src="https://images.squarespace-cdn.com/content/v1/5c6494bbf4e5310e57b3de34/1550625376634-X42STSQ2O49LOH35JLXG/blob?format=1500w">
+                </a>
+                
+                <ul class="nav_list">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              ABOUT US
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item nav-link" href="#">About Us</a>
+                              <a class="dropdown-item nav-link" href="#">Contact Us</a>
+                              <a class="dropdown-item nav-link" href="#">FAQ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="../educational.html">EDUCATIONAL INFO</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="../donate.html">DONATE</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="../Gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              FORMS
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item nav-link" href="../forms/foster-an-animal.html">Foster Application</a>
+                              <a class="dropdown-item nav-link" href="../forms/volunteer.html">Volunteer Application</a>
+                              
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="forms/why-i-foster.html">TESTIMONIALS</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div id="content">
+                <div id="title">2024 Saving Orphan Souls Volunteering Application</div><br>
+                <span class="header">2024 - Saving Orphan Souls Rescue Volunteering Application</span><br>
+                <p style="font-size:16pt;">
+                    Welcome to Saving Orphan Souls Rescue! You are joining a dedicated group of people working directly to help homeless animals. We value your contribution to our group whether you foster one animal or dozens of animals over time. 
+                </p>
+                <div class="form">
+                    <form name="foster" method="POST" action="#">
+                        <label for="date">Date</label><br>
+                        <input
+                            id="date"
+                            class="field single"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            type="date"
+                            value=""
+                        >
+                        <br><br>
+                        <label>
+                            Name
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <div style="display:flex; align-items: flex-start;">
+                            <div style="width:50%; padding-right:4px;">
+                                <label for="fname" class="caption">First name</label>
+                                <input
+                                    id="fname"
+                                    class="field"
+                                    aria-invalid="false"
+                                    aria-required="false"
+                                    autocomplete="false"
+                                    type="text"
+                                    value=""
+                                >
+                            </div>
+                            <div style="width:50%; padding-left:4px;">
+                                <label for="lname" class="caption">Last name</label>
+                                <input
+                                    id="lname"
+                                    class="field"
+                                    aria-invalid="false"
+                                    aria-required="false"
+                                    autocomplete="false"
+                                    type="text"
+                                    value=""
+                                >
+                            </div>
+                        </div>
+                        <br>
+                        <label for="address">
+                            Mailing Address
+                            <span class="required">(required)</span>
+                        </label>
+                        <input
+                            id="address"
+                            class="field"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            placeholder=""
+                            type="text"
+                            value=""
+                        >
+                        <br><br>
+                        <label for="address_type">
+                            Email
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                            
+                    </input>
+                        <br><br>
+                        <label for="phone">
+                            Phone Number
+                            <span class="required">(required)</span>
+                        </label>
+                        <input
+                            id="phone"
+                            class="field"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            placeholder="XXX-XXX-XXXX"
+                            type="tel"
+                            value=""
+                            inputmode="numeric"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        >
+                        <br><br>
+                        
+                        <label for="adults">
+                            Do you currently have your own animals?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="adults"
+                            class="field single"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            placeholder=""
+                            type="text"
+                            value=""
+                            inputmode="numeric"
+                        >
+                        <br><br>
+                        <label for="children">
+                            List all animals you have with breed, age, sex and if thay are neutered/spayed and microchipped?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <textarea
+                            id="children"
+                            class="field"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            placeholder=""
+                            value=""
+                        ></textarea>
+                        <br><br>
+                        <label for="pets">
+                            Are your pets current on Rabies & All vaccination?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <select
+                            id="pets"
+                            aria-label="Do you have pets in the home?"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                            onchange="onSelectOption(this, 'Yes')"
+                        >
+                            <option value="Select an option" disabled="" hidden="">Select an option</option>
+                            <option value="----">----</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        <blockquote id="pets_bq" hidden>
+                            <label for="list_pets">
+                                Please list gender, approximate age, whether spayed/neutered and how long you have had the pet(s)
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <textarea
+                                id="list_pets"
+                                class="field"
+                                aria-invalid="false"
+                                aria-required="false"
+                                autocomplete="false"
+                                placeholder=""
+                                value=""
+                            ></textarea>
+                            <br><br>
+                            <label for="dogs_licensed">
+                                If you have dogs, are they currently licensed?
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <select
+                                id="dogs_licensed"
+                                aria-label="If you have dogs, are they currently licensed?"
+                                aria-invalid="false"
+                                aria-required="false"
+                                class="field show-placeholder"
+                            >
+                                <option value="Select an option" disabled="" hidden="">Select an option</option>
+                                <option value="----">----</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="N/A">N/A</option>
+                            </select>
+                            <br><br>
+                            <label for="do_you">
+                                Do you
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <span class="required">If rent please provide copy of lease that states you may have animals. (Written approval is needed from property manager prior to fostering)</span><br>
+                            <select
+                                id="do_you"
+                                aria-label="Do you"
+                                aria-invalid="false"
+                                aria-required="false"
+                                class="field show-placeholder"
+                                onchange="onSelectOption(this, 'Own')"
+                            >
+                                <option value="Select an option" disabled="" hidden="">Select an option</option>
+                                <option value="----">----</option>
+                                <option value="Own">Own</option>
+                                <option value="Rent">Rent</option>
+                            </select>
+                            <blockquote id="do_you_bq" hidden>
+                                <label for="hoa">Do you have an HOA?</label><br>
+                                <select
+                                    id="hoa"
+                                    aria-label="Do you have an HOA?"
+                                    aria-invalid="false"
+                                    aria-required="false"
+                                    class="field show-placeholder"
+                                    onchange="onSelectOption(this, 'Yes')"
+                                >
+                                    <option value="Select an option" disabled="" hidden="">Select an option</option>
+                                    <option value="----">----</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <blockquote id="hoa_bq" hidden>
+                                    <label for="limit">What is the limit of how many animals you may have?</label><br>
+                                    <input
+                                        id="limit"
+                                        class="field single"
+                                        aria-invalid="false"
+                                        aria-required="false"
+                                        autocomplete="false"
+                                        placeholder=""
+                                        type="number"
+                                        value=""
+                                        inputmode="numeric"
+                                    >
+                                </blockquote>
+                            </blockquote>
+                            <br><br>
+                            <label for="rabies_vax">
+                                Are your pets current on Rabies vaccination?
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <select
+                                id="rabies_vax"
+                                aria-label="Are your pets current on Rabies vaccination?"
+                                aria-invalid="false"
+                                aria-required="false"
+                                class="field show-placeholder"
+                            >
+                                <option value="Select an option" disabled="" hidden="">Select an option</option>
+                                <option value="----">----</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <br><br>
+                            <label for="microchip">
+                                Are your pets microchipped?
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <select
+                                id="microchip"
+                                aria-label="Are your pets microchipped?"
+                                aria-invalid="false"
+                                aria-required="false"
+                                class="field show-placeholder"
+                            >
+                                <option value="Select an option" disabled="" hidden="">Select an option</option>
+                                <option value="----">----</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <br><br>
+                            <label>
+                                Please select any diseases your household pets may have had:
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <span class="required">Check all that apply</span><br>
+                            <!-- TODO: CURRENTLY, THESE DON'T WORK -->
+                            <div class="option">
+                                <input class="cb_in" id="parvo" name="parvo" type="checkbox" value="Parvo">
+                                <label class="cb" for="parvo">
+                                    <span data-dynamic-strings="true">Parvo</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input class="cb_in" id="distemper" name="distemper" type="checkbox" value="Distemper">
+                                <label class="cb" for="distemper">
+                                    <span data-dynamic-strings="true">Distemper</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input class="cb_in" id="feline_leukemia" name="feline_leukemia" type="checkbox" value="Feline Leukemia">
+                                <label class="cb" for="feline_leukemia">
+                                    <span data-dynamic-strings="true">Feline Leukemia</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input class="cb_in" id="fiv" name="fiv" type="checkbox" value="FIV">
+                                <label class="cb" for="fiv">
+                                    <span data-dynamic-strings="true">FIV</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input class="cb_in" id="other" name="other" type="checkbox" value="OTHER:">
+                                <label class="cb" for="other">
+                                    <span data-dynamic-strings="true">OTHER:</span>
+                                </label>
+                            </div>
+                            <div class="option">
+                                <input class="cb_in" id="none" name="none" type="checkbox" value="NONE">
+                                <label class="cb" for="none">
+                                    <span data-dynamic-strings="true">NONE</span>
+                                </label>
+                            </div>
+                        </blockquote>
+                        <br><br>
+
+                        <label for="address_type">
+                            If your animals are not Microchipped please explain why?
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                        <label for="responsibility">
+                            Is everyone in the home in favor of accepting the extra responsibility of fostering?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <select
+                            id="responsibility"
+                            aria-label="Is everyone in the home in favor of accepting the extra responsibility of fostering?"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                            <option value="Select an option" disabled="" hidden="">Select an option</option>
+                            <option value="----">----</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        <br><br>
+                        <label>
+                            How did you hear about our volunteer opportunities?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <span class="required">Check all that apply</span><br>
+                        <!-- TODO: CURRENTLY, THESE DON'T WORK -->
+                        <div class="option">
+                            <input class="cb_in" id="kitten" name="kitten" type="checkbox" value="Kitten">
+                            <label class="cb" for="kitten">
+                                <span data-dynamic-strings="true">Petco</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="adult_cat" name="adult_cat" type="checkbox" value="Adult Cat">
+                            <label class="cb" for="adult_cat">
+                                <span data-dynamic-strings="true">Friend</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="sad" name="sad" type="checkbox" value="Small Adult Dog">
+                            <label class="cb" for="sad">
+                                <span data-dynamic-strings="true">Family</span>
+                            </label>
+                        </div>
+
+                        <label for="children">
+                            Why do you want to Volunteer with Saving Orphan Souls Rescue?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <textarea
+                            id="children"
+                            class="field"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            placeholder=""
+                            value=""
+                        ></textarea>
+
+                        <br>
+                        <label for="children">
+                            Do you work with any other Rescue Groups? If Yes, Please list including your role with the organization.
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <textarea
+                            id="children"
+                            class="field"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            placeholder=""
+                            value=""
+                        ></textarea>
+                      
+                        <br>
+
+                        <label for="children">
+                            Please provide contact information including name and phone number of the rescue group so we can contact.
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <textarea
+                            id="children"
+                            class="field"
+                            aria-invalid="false"
+                            aria-required="false"
+                            autocomplete="false"
+                            placeholder=""
+                            value=""
+                        ></textarea>
+                        <br>
+                        <label>Animal Experience</label><br>
+                        <span class="required">Check all that apply</span><br>
+                        <!-- TODO: CURRENTLY, THESE DON'T WORK -->
+                        <div class="option">
+                            <input class="cb_in" id="nursing_kitten" name="nursing_kitten" type="checkbox" value="Nursing Kittens/Mother">
+                            <label class="cb" for="nursing_kitten">
+                                <span data-dynamic-strings="true">Veterinary Hospital</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="nursing_puppies" name="nursing_puppies" type="checkbox" value="Nursing Puppies/Mother">
+                            <label class="cb" for="nursing_puppies">
+                                <span data-dynamic-strings="true">Boarding Facility</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="2_6" name="2_6" type="checkbox" value="2 - 6 months">
+                            <label class="cb" for="2_6">
+                                <span data-dynamic-strings="true">Foster Home</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="6_12" name="6_12" type="checkbox" value="6 months - year">
+                            <label class="cb" for="6_12">
+                                <span data-dynamic-strings="true">Dog Grooming</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="12_36" name="12_36" type="checkbox" value="1 - 3 years">
+                            <label class="cb" for="12_36">
+                                <span data-dynamic-strings="true">Cat Grooming</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="36_72" name="36_72" type="checkbox" value="3 - 6 years">
+                            <label class="cb" for="nursing_cat">
+                                <span data-dynamic-strings="true">Shelter Work</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="senior" name="senior" type="checkbox" value="Senior">
+                            <label class="cb" for="senior">
+                                <span data-dynamic-strings="true">Training/Obedience</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Pet Sitting</span>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Farm Animals</span>
+                            </label>
+                        </div>
+                        <br>
+
+                        <label>Other Experience, Special Skills, Strengths, Talents: (check all that apply)</label><br>
+                        <span class="required">Check all that apply</span><br>
+                        <!-- TODO: CURRENTLY, THESE DON'T WORK -->
+                        <div class="option">
+                            <input class="cb_in" id="nursing_kitten" name="nursing_kitten" type="checkbox" value="Nursing Kittens/Mother">
+                            <label class="cb" for="nursing_kitten">
+                                <span data-dynamic-strings="true">Computer</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="nursing_puppies" name="nursing_puppies" type="checkbox" value="Nursing Puppies/Mother">
+                            <label class="cb" for="nursing_puppies">
+                                <span data-dynamic-strings="true">Management</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="2_6" name="2_6" type="checkbox" value="2 - 6 months">
+                            <label class="cb" for="2_6">
+                                <span data-dynamic-strings="true">Working with Dogs</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="6_12" name="6_12" type="checkbox" value="6 months - year">
+                            <label class="cb" for="6_12">
+                                <span data-dynamic-strings="true">Working with Cats</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="12_36" name="12_36" type="checkbox" value="1 - 3 years">
+                            <label class="cb" for="12_36">
+                                <span data-dynamic-strings="true">Graphic Artist</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="36_72" name="36_72" type="checkbox" value="3 - 6 years">
+                            <label class="cb" for="nursing_cat">
+                                <span data-dynamic-strings="true">Photography</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="senior" name="senior" type="checkbox" value="Senior">
+                            <label class="cb" for="senior">
+                                <span data-dynamic-strings="true">Writing</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Data Entry</span>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Fund Raising</span>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Grant Writing</span>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">TNR</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Other</span>
+                            </label>
+                        </div>
+                        <br><br>
+
+                        <label>Volunteer Work Preference - Check all that apply
+                        </label><br>
+                        <span class="required">Check all that apply</span><br>
+                        <!-- TODO: CURRENTLY, THESE DON'T WORK -->
+                        <div class="option">
+                            <input class="cb_in" id="nursing_kitten" name="nursing_kitten" type="checkbox" value="Nursing Kittens/Mother">
+                            <label class="cb" for="nursing_kitten">
+                                <span data-dynamic-strings="true">Volunteer Work with Cats</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="nursing_puppies" name="nursing_puppies" type="checkbox" value="Nursing Puppies/Mother">
+                            <label class="cb" for="nursing_puppies">
+                                <span data-dynamic-strings="true">Volunteer Work with Dogs</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="2_6" name="2_6" type="checkbox" value="2 - 6 months">
+                            <label class="cb" for="2_6">
+                                <span data-dynamic-strings="true">Pet Transport</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="6_12" name="6_12" type="checkbox" value="6 months - year">
+                            <label class="cb" for="6_12">
+                                <span data-dynamic-strings="true">Pet Walking</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="12_36" name="12_36" type="checkbox" value="1 - 3 years">
+                            <label class="cb" for="12_36">
+                                <span data-dynamic-strings="true">Pet Sitting</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="36_72" name="36_72" type="checkbox" value="3 - 6 years">
+                            <label class="cb" for="nursing_cat">
+                                <span data-dynamic-strings="true">Clerical/Office</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="senior" name="senior" type="checkbox" value="Senior">
+                            <label class="cb" for="senior">
+                                <span data-dynamic-strings="true">Foster Care</span>
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Special Events</span>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Educational Programs</span>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input class="cb_in" id="no_pref" name="no_pref" type="checkbox" value="No Preference">
+                            <label class="cb" for="no_pref">
+                                <span data-dynamic-strings="true">Other</span>
+                            </label>
+                        </div>
+
+                    
+                        <br><br>
+                        <label for="address_type">
+                            Do you have any allergies or physical restrictions?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                        <br><br>
+                        <label for="address_type">
+                            What days can you volunteeer?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                        <br><br>
+ 
+                        <label for="address_type">
+                           What hours are you available to volunteer?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                        <br><br>
+                        
+                        <label for="address_type">
+                            Are you comfortable interacting with our cats in Petco as well as, cleaning their cages and providing food and water??
+                             <span class="required">(required)</span>
+                         </label><br>
+                         <input
+                             id="address_type"
+                             aria-label="Is this Address"
+                             aria-invalid="false"
+                             aria-required="false"
+                             class="field show-placeholder"
+                         >
+                         <br> <br>
+                         <label for="address_type">
+                            Please wear gloves when handling the animals - if you are scratched or bitten, YOU must report this to Petco Management, and follow their specific policies regarding the incident. PLEASE CONFIRM BY TYPING YES IN THE SPACE PROVIDED!!!
+                             <span class="required">(required)</span>
+                         </label><br>
+                         <input
+                             id="address_type"
+                             aria-label="Is this Address"
+                             aria-invalid="false"
+                             aria-required="false"
+                             class="field show-placeholder"
+                         >
+                        <blockquote id="vet_bq" hidden>
+                            <label>
+                                Please give the vet's contact information
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <div style="display:flex; align-items: flex-start;">
+                                <div style="width:50%; padding-right:4px;">
+                                    <label for="vet_name" class="caption">Name</label>
+                                    <input
+                                        id="vet_name"
+                                        class="field"
+                                        aria-invalid="false"
+                                        aria-required="false"
+                                        autocomplete="false"
+                                        type="text"
+                                        value=""
+                                    >
+                                </div>
+                                <div style="width:50%; padding-left:4px;">
+                                    <label for="vet_phone" class="caption">Phone number</label>
+                                    <input
+                                        id="vet_phone"
+                                        class="field"
+                                        aria-invalid="false"
+                                        aria-required="false"
+                                        autocomplete="false"
+                                        placeholder="XXX-XXX-XXXX"
+                                        type="tel"
+                                        value=""
+                                        inputmode="numeric"
+                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    >
+                                </div>
+                            </div>
+                            <br><br>
+                            <label for="vet_ref">
+                                May we contact the clinic for a reference?
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <select
+                                id="vet_ref"
+                                aria-label="May we contact the clinic for a reference?"
+                                aria-invalid="false"
+                                aria-required="false"
+                                class="field show-placeholder"
+                                onchange="onSelectOption(this, 'Yes')"
+                            >
+                                <option value="Select an option" disabled="" hidden="">Select an option</option>
+                                <option value="----">----</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </blockquote>
+                        <br><br>
+                        <label for="yard_fenced">
+                            Are you able to commit to providing ongoing help at Petco and assist with other volunteer opportunities as they arise?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <select
+                            id="yard_fenced"
+                            aria-label="Is your yard fenced?"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                            onchange="onSelectOption(this, 'Yes')"
+                        >
+                            <option value="Select an option" disabled="" hidden="">Select an option</option>
+                            <option value="----">----</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        <br> <br>
+                        <label for="address_type">
+                            Please provide (3) References - #1
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+
+                        <label for="address_type">
+                            Please provide (3) References - #2
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                        <br> <br>
+                        <label for="address_type">
+                            Please provide (3) References - #3
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+
+                        <br><br>
+                        <label for="address_type">
+                            Please provide your Drivers License Number/State & Expiration
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <input
+                            id="address_type"
+                            aria-label="Is this Address"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                        >
+                        <br> <br>
+                        <label for="foster_multiple">
+                            Do you have your own transporation?
+                            <span class="required">(required)</span>
+                        </label><br>
+                        <select
+                            id="foster_multiple"
+                            aria-label="Would you be willing to foster more than one animal?"
+                            aria-invalid="false"
+                            aria-required="false"
+                            class="field show-placeholder"
+                            onchange="onSelectOption(this, 'Yes')"
+                        >
+                            <option value="Select an option" disabled="" hidden="">Select an option</option>
+                            <option value="----">----</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        <blockquote id="foster_multiple_bq" hidden>
+                            <label for="foster_number">
+                                How many would you be willing to foster?
+                                <span class="required">(required)</span>
+                            </label><br>
+                            <input
+                                id="foster_number"
+                                class="field single"
+                                aria-invalid="false"
+                                aria-required="false"
+                                autocomplete="false"
+                                placeholder=""
+                                type="number"
+                                value=""
+                                inputmode="numeric"
+                            >
+                        </blockquote>
+                        <br><br>
+                        <br><br>
+
+                        • This volunteer agreement (“Agreement”) is entered into as of the date set forth below by Saving Orphan Souls Rescue. • WHEREAS, the Volunteer has voluntarily contacted Saving Orphan Souls Rescue and has expressed an interest in working with cats/animals in the care and custody of Saving Orphan Souls Rescue/Petco. In consideration of Saving Orphan Souls Rescue agreement to allow the volunteer to view and/or interact with such animals, the volunteer hereby, for his/her heirs, his/her personal representatives, and him/herself represent and warrant as follows: • 1. The volunteer is fully aware of the risks that cats pose and have elected to view and/or interact with one or more cats in the care of Saving Orphan Souls Rescue/Petco voluntarily. The volunteer knowingly assumes all risks that exposure to cats may pose, including but not limited to bodily injury and/or death. • 2. THE VOLUNTEER HEREBY WAIVES, RELEASES DISCHARGES, HOLD HARMLESS, AND PROMISES TO INDEMNIFY AND NOT TO BRING SUIT AGAINT SAVING ORPHAN SOULS RESCUE, its directors, officers, volunteers, staff, and all other agents, and attorney for any of the referenced parties and any other parties acting for or on behalf of the referenced partied from an and all rights and claims which the volunteer has or which may hereafter accrue to the volunteer and from any and all damages which may be sustained by the volunteer directly or indirectly in connection with, or arising out of, the volunteer’s exposure to such animals.
+                        <br>
+                        <input
+                                id="foster_number"
+                                class="field single"
+                                aria-invalid="false"
+                                aria-required="false"
+                                autocomplete="false"
+                                placeholder=""
+                                type="number"
+                                value=""
+                                inputmode="numeric"
+                            >
+
+                        <br>
+                        <br>
+                        <label>Signature</label> <br>
+                        <input
+                                id="foster_number"
+                                class="field single"
+                                aria-invalid="false"
+                                aria-required="false"
+                                autocomplete="false"
+                                placeholder=""
+                                type="number"
+                                value=""
+                                inputmode="numeric"
+                            >
+                        <br>
+
+                        <br><br><br>
+                        <div style="display:flex; align-items: flex-start; align-self: center;">
+                            <button type="submit" style="padding:none; border:none; background-color: transparent;">
+                                <a class="button">Submit Form</a>
+                            </button>
+                            <button type="reset" style="padding:none; border:none; background-color: transparent;">
+                                <a class="button">Reset Form</a>
+                            </button>
+                        </div>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                <br><br><hr><br>
+                <div style="display:flex; align-items: flex-start; align-self: center;">
+                    <div style="width:50%; padding:12pt;">
+                        <p style="font-size:16pt;">
+                            <em>Saving Orphan Souls Rescue would like to acknowledge the fosters who have previously helped us save animals, and our current fosters for their outstanding commitment, undivided love, security & socialization they provide to our animals!</em>
+                            <br><br>
+                            <em>We could not do this without you! Thank you!!</em>
+                        </p>
+                        <br><br><br>
+                        <p>
+                            <em>
+                                “We must fight against the spirit of unconscious cruelty with which we treat the animals. Animals suffer as much as we do. True humanity does not allow us to impose such sufferings on them. It is our duty to make the whole world recognize it.
+                                Until we extend our circle of compassion to all living things, humanity will not find peace”
+                            </em><br><br>
+                            - Albert Schweitzer
+                        </p>
+                    </div>
+                    <div style="width:50%; padding:12pt; align-items:center; text-align:center;">
+                        <img width=80% src="https://images.squarespace-cdn.com/content/v1/5c6494bbf4e5310e57b3de34/ce139bed-62d3-490f-a349-47f308c32efa/Capture.JPG">
+                        <br><br>
+                        <a class="button" href="https://www.savingorphansouls.org/foster-an-animal">Foster Application</a>
+                        <br><br><br>
+                        <p>
+                            <b>PLEASE SPAY/NEUTER/MICROCHIP YOUR PETS!!</b>
+                            <br><br>
+                            TAXPAYER EIN#   81-0797233
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
