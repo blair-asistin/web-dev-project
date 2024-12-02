@@ -25,7 +25,10 @@
             }
         </script>
 
-    <script src="../script.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="../script.js" defer></script>
     </head>
     <body>
         <!-- <div id="bg-image"></div> -->
@@ -49,9 +52,9 @@
                               ABOUT US
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item nav-link" href="#">About Us</a>
-                              <a class="dropdown-item nav-link" href="#">Contact Us</a>
-                              <a class="dropdown-item nav-link" href="#">FAQ</a>
+                                <a class="dropdown-item nav-link" href="../about-us/AboutUs.html">About Us</a>
+                                <a class="dropdown-item nav-link" href="../about-us/ContactUs.html">Contact Us</a>
+                                <a class="dropdown-item nav-link" href="../about-us/FAQ.html">FAQ</a>
                             </div>
                         </div>
                     </li>
@@ -70,15 +73,28 @@
                               FORMS
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item nav-link" href="../forms/foster-an-animal.html">Foster Application</a>
-                              <a class="dropdown-item nav-link" href="../forms/volunteer.html">Volunteer Application</a>
+                              <a class="dropdown-item nav-link" href="foster-an-animal.html">Foster Application</a>
+                              <a class="dropdown-item nav-link" href="volunteer.html">Volunteer Application</a>
                               
                             </div>
                         </div>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="forms/why-i-foster.html">TESTIMONIALS</a>
+                        <a class="nav-link" href="../why-i-foster.html">TESTIMONIALS</a>
+                    </li>
+
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              ADOPTABLES
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item nav-link" href="../adoptables/our-adoption-process.html">Adoption Process</a>
+                              <a class="dropdown-item nav-link" href="../adoptables/adoptable-dogs.html">Adoptable Dogs & Cats</a>
+                              
+                            </div>
+                        </div>
                     </li>
 
                 </ul>
