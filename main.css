@@ -36,9 +36,9 @@ body {
 
 
 
-/* a {
+ a {
     text-decoration-line: none;
-    /* border-bottom: 1pt solid #2060dd; 
+    /* border-bottom: 1pt solid #2060dd; */
     color: #2060dd;
     cursor: pointer;
 }
@@ -46,8 +46,8 @@ body {
 a:hover {
     border-color:#77a4ff;
     color:#77a4ff;
-} */
-a:not(.button) {
+}
+/* a:not(.button) {
     text-decoration-line: none;
     border-bottom: 1pt solid #2060dd;
     color: #2060dd;
@@ -56,7 +56,7 @@ a:not(.button) {
 a:hover:not(.button) {
     border-color:#77a4ff;
     color:#77a4ff;
-}
+} */
 
 a.button {
     text-decoration-line: none;
@@ -464,9 +464,10 @@ ul{
 }
 
 .fb-artist-name {
-    position: relative;
-    bottom: 130px;
-    left: 550px;
+    position: absolute;
+    
+    left: 40%;
+    top: 240%;
     z-index: 1;
 }
 
@@ -521,10 +522,7 @@ ul{
 }
 
 .volunteer-artist-name {
-    position: absolute;
-    right: 220px;
-    bottom: -1850px;
-    z-index: 1;
+    text-align: right;
     
 }
 
@@ -584,10 +582,7 @@ ul{
 }
 
 .donate-artist-name {
-    position: absolute;
-    right: 1000px;
-    top: 3400px;
-    z-index: 1;
+    margin-left: 4em;    
 }
 
 .homedonate-desc-container h1{
