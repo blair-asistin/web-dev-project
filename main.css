@@ -198,9 +198,7 @@ ul{
 }
 
 .amazon-artist-name {
-    position: absolute;
-    right: 1000px;
-    bottom: -100px;
+    margin-left: 2em;
 }
 
 .donate-desc {
@@ -224,9 +222,8 @@ ul{
 }
 
 .donate-2-artist-name {
-    position: absolute;
-    right: 250px;
-    bottom: -720px;
+    text-align: right;
+    margin-right: 2em;
 }
 
 
